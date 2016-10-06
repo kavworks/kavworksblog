@@ -11,7 +11,7 @@ layout: default
              <a class="post-link" href="{{post.url | prepend: site.baseurl}}">{{ post.title }}</a>
         </h2>
         {% if post.cover %}<div class="img-overlay"></div>{% endif %}
-                <a href="{{ post.url  }}" class="overlay"> POST_URL : {{post.url}} , SITE_URL : {{site.url}} , BASE_URL : {{site.baseurl}} , FULL : {{site.url}}{{site.baseurl}}{{post.url}} </a>
+                <a href="{{site.url}}{{site.baseurl}}{{post.url}}" class="overlay"> POST_URL : {{post.url}} , SITE_URL : {{site.url}} , BASE_URL : {{site.baseurl}} , FULL : {{site.url}}{{site.baseurl}}{{post.url}} </a>
       </div>
       <div class="post-data">
         <p class="post-excerpt">{{ post.excerpt | strip_html }}</p>
