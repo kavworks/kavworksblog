@@ -8,10 +8,10 @@ layout: default
     <article class="mui-panel">
       <div class="bg-holder {% if post.color %}bg-{{ post.color }}{% endif %}" style="{% if post.cover %}background:url({{post.cover}}) no-repeat center center{% endif %}">
         <h2 class="post-list-title">
-          <a class="post-link" href="{{post.url | prepend: site.baseurl}}">{{ post.title }}</a>
+          <a class="post-link" href="{{post.url | prepend: site.baseurl}}">{{ post.title }}111</a>
         </h2>
         {% if post.cover %}<div class="img-overlay"></div>{% endif %}
-        <a href="{{ post.url | prepend: site.url }}" class="overlay"></a>
+        <a href="{{ post.url | prepend: site.url }}" class="overlay">222</a>
       </div>
       <div class="post-data">
         <p class="post-excerpt">{{ post.excerpt | strip_html }}</p>
@@ -34,7 +34,7 @@ layout: default
     {% endif %}
     <span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="mui-btn mui-btn-primary">Next<i class="fa fa-chevron-circle-right"></i></a>
+    <a href="{{ paginator.next_page_path }}" class="mui-btn mui-btn-primary">Next<i class="fa fa-chevron-circle-right"></i>333</a>
     {% endif %}
   </div>
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
