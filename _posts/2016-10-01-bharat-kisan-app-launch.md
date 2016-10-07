@@ -1,9 +1,15 @@
 ---
 layout: post
 color: purple
-title:  "Color Choices"
-date:   2015-07-12 01:54:00
+title:  "Bharat Kisan App Launch"
+cover: "http://www.clipartkid.com/images/26/components-of-organic-fertilizer-image-by-microsoft-office-clip-art-PsDT67-clipart.jpg"
+date:   2016-10-01 01:54:00
+author: kajal
 ---
+
+<p><small>An app that shows exact chemical fertilizer composition and various fertilizer list for varites of food  <a href="http://jasonm23.github.io/markdown-css-themes/" target="_blank">http://jasonm23.github.io/markdown-css-themes/</a>.</small></p>
+
+<h1>A First Level Header</h1>
 
 ### Any of the following color values can be used as the value of `color` in the front matter of the blog post.
 <div class="bg-grey">
