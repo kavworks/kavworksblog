@@ -31,3 +31,6 @@ disqus: bitwiser
 ##set this to enable google analytics
 #ga_id: analyticsID
 #ga_domain: bitwiser.in
+
+
+gems: [jekyll-paginate]

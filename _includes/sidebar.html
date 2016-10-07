@@ -1,68 +1,62 @@
 <div class="mui-col-lg-4">
-  <div class="mui-panel">
-    <h2>Links1</h2>
-    <ul class="about-links">
-        <li><a href="/bitwiser-material/about/" class="mui-btn">About</a></li>
-    </ul>
-    <h2>Contact</h2>
-    <ul class="about-links">
-        {% if site.links.github %}
-            <li><a href="https://github.com/{{ site.links.github }}" target="_blank" class="mui-btn"><i class="fa fa-github"></i>Github</a></li>
-        {% endif %}
-        {% if site.links.twitter %}
-            <li><a href="https://twitter.com/{{ site.links.twitter }}" target="_blank" class="mui-btn "><i class="fa fa-twitter"></i>Twitter</a></li>
-        {% endif %}
-        {% if site.links.facebook %}
-            <li><a href="https://www.facebook.com/{{ site.links.facebook }}" target="_blank" class="mui-btn"><i class="fa fa-facebook"></i>Facebook</a></li>
-        {% endif %}
-        {% if site.links.email %}
+    <div class="mui-panel">
+        <div class="post">
+            <h1>Recent Posts</h1>
+            {% for post in site.posts offset:1 limit:3 %}
+            {% if forloop.last %}
+            <li>
+                <a href="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="mui-col-lg-4">
+    <div class="mui-panel">
+        <div class="post">
+            <h1>Blog archive</h1>
+                {% for post in site.posts %}
+                {% unless post.next %}
+                <h2 id="2015-ref">{{ post.date | date: '%Y %b' }}</h2>
+                {% else %}
+                {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
+                {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
+                {% if year != nyear %}
+                <h3>{{ post.date | date: '%Y %b' }}</h3>
+                {% endif %}
+                {% endunless %}
+
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="mui-col-lg-4">
+    <div class="mui-panel">
+        <h2>Links1</h2>
+        <ul class="about-links">
+            <li><a href="/bitwiser-material/about/" class="mui-btn">About</a></li>
+        </ul>
+        <h2>Contact</h2>
+        <ul class="about-links">
+            {% if site.links.github %}
+            <li><a href="https://github.com/{{ site.links.github }}" target="_blank" class="mui-btn"><i
+                    class="fa fa-github"></i>Github</a></li>
+            {% endif %}
+            {% if site.links.twitter %}
+            <li><a href="https://twitter.com/{{ site.links.twitter }}" target="_blank" class="mui-btn "><i
+                    class="fa fa-twitter"></i>Twitter</a></li>
+            {% endif %}
+            {% if site.links.facebook %}
+            <li><a href="https://www.facebook.com/{{ site.links.facebook }}" target="_blank" class="mui-btn"><i
+                    class="fa fa-facebook"></i>Facebook</a></li>
+            {% endif %}
+            {% if site.links.email %}
             <li><a href="mailto:{{ site.links.email }}" class="mui-btn"><i class="fa fa-envelope"></i>Mail</a></li>
-        {% endif %}
-    </ul>
-  </div>
+            {% endif %}
+        </ul>
+    </div>
 </div>
-
-
-<div class="mui-col-lg-4">
-  <div class="mui-panel">
-<div class="post">
-	<h2>Blog archive</h2>
-	<ul>
-	  {% for post in site.posts %}
-	    {% unless post.next %}
-	      <h2 id="2015-ref">{{ post.date | date: '%Y %b' }}</h2>
-	    {% else %}
-	      {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
-	      {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
-	      {% if year != nyear %}
-	        <h3>{{ post.date | date: '%Y %b' }}</h3>
-	      {% endif %}
-	    {% endunless %}
-
-	    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
-</div>
-	</div>
-</div>
-
-
-
-<div class="mui-col-lg-4">
-  <div class="mui-panel">
-
-	  
-
-	  
-	  
-
-<h1>Recent Posts</h1>
-{% for post in site.posts offset:1 limit:2 %}
-	{% if forloop.last %}
-	  <li>
-	    <a href="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	  </li>
-	{% endif %}
-{% endfor %}
-	  
-	</div></div>
