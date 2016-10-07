@@ -3,11 +3,13 @@
         <div class="post">
             <h1>Recent Posts</h1>
             {% for post in site.posts offset:1 limit:3 %}
-            {% if forloop.last %}
-            <li>
-                <a href="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </li>
-            {% endif %}
+            <ul>
+                {% if forloop.last %}
+                <li>
+                    <a href="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </li>
+                {% endif %}
+            </ul>
             {% endfor %}
         </div>
     </div>
@@ -16,20 +18,22 @@
 <div class="mui-col-lg-4">
     <div class="mui-panel">
         <div class="post">
-            <h1>Blog archive</h1>
+            <h3>Blog archive</h3>
+            <ul>
                 {% for post in site.posts %}
                 {% unless post.next %}
-                <h2 id="2015-ref">{{ post.date | date: '%Y %b' }}</h2>
+                <h4 id="2015-ref">{{ post.date | date: '%Y %b' }}</h4>
                 {% else %}
                 {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
                 {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
                 {% if year != nyear %}
-                <h3>{{ post.date | date: '%Y %b' }}</h3>
+                <h4>{{ post.date | date: '%Y %b' }}</h4>
                 {% endif %}
                 {% endunless %}
 
                 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endfor %}
+            </ul>
         </div>
     </div>
 </div>
@@ -60,3 +64,5 @@
         </ul>
     </div>
 </div>
+
+

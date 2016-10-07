@@ -1,7 +1,7 @@
 # Site settings
 ## Change the values as needed.
 title: KAVworks Technologies Pvt. Ltd Blog
-email: brijeshb42@gmail.com
+email: vijay777pawar@gmail.com
 description: "A jekyll theme implementing material design by using muicss."
 keywords: "jekyll, theme, material, muicss"
 #url: "http://bitwiser.in/bitwiser-material" # the base hostname & protocol for your site
@@ -17,9 +17,9 @@ sass:
   sass_dir: _sass
   style: :compressed
 links:
-  facebook: brijeshb42
-  twitter: brijeshb42
-  email: brijeshb42@gmail.com
+  facebook: kavworks
+  twitter: kavworks
+  email: contact.kavworks@gmail.com
   github: brijeshb42/bitwiser-material/
 exclude:
   - bower_components

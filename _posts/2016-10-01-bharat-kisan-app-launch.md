@@ -7,8 +7,8 @@ date:   2016-10-01 01:54:00
 author: kajal
 ---
 
-<p><small>An app that shows exact chemical fertilizer composition and various fertilizer list for varites of food  <a href="http://jasonm23.github.io/markdown-css-themes/" target="_blank">http://jasonm23.github.io/markdown-css-themes/</a>.</small></p>
 
+<p><small>An app that shows exact chemical fertilizer composition and various fertilizer list for varites of food .</small></p>
 <h1>A First Level Header</h1>
 
 ### Any of the following color values can be used as the value of `color` in the front matter of the blog post.

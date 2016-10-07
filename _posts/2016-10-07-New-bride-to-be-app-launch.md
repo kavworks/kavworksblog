@@ -7,7 +7,7 @@ date:   2016-10-7 01:55:00
 author: vijay
 ---
 
-<p><small>An app to record all brides requirements  <a href="http://jasonm23.github.io/markdown-css-themes/" target="_blank">http://jasonm23.github.io/markdown-css-themes/</a>.</small></p>
+<p><small>An app to record all brides requirements .</small></p>
 
 <h1>A First Level Header</h1>
 
