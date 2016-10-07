@@ -3,19 +3,19 @@ layout: base
 ---
 
 
-<meta property="og:image" content="http://previews.123rf.com/images/artisticco/artisticco1112/artisticco111200028/11578932-A-vector-illustration-of-a-bride-carrying-shopping-bags-Stock-Vector.jpg">
-<meta property="og:image:url" content="http://previews.123rf.com/images/artisticco/artisticco1112/artisticco111200028/11578932-A-vector-illustration-of-a-bride-carrying-shopping-bags-Stock-Vector.jpg">
-<meta property="og:image:secure_url" content="http://previews.123rf.com/images/artisticco/artisticco1112/artisticco111200028/11578932-A-vector-illustration-of-a-bride-carrying-shopping-bags-Stock-Vector.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:type" content="article" />
+<!--<meta property="og:image" content="http://previews.123rf.com/images/artisticco/artisticco1112/artisticco111200028/11578932-A-vector-illustration-of-a-bride-carrying-shopping-bags-Stock-Vector.jpg">-->
+<!--<meta property="og:image:url" content="http://previews.123rf.com/images/artisticco/artisticco1112/artisticco111200028/11578932-A-vector-illustration-of-a-bride-carrying-shopping-bags-Stock-Vector.jpg">-->
+<!--<meta property="og:image:secure_url" content="http://previews.123rf.com/images/artisticco/artisticco1112/artisticco111200028/11578932-A-vector-illustration-of-a-bride-carrying-shopping-bags-Stock-Vector.jpg">-->
+<!--<meta property="og:image:type" content="image/jpeg">-->
+<!--<meta property="og:image:width" content="1200">-->
+<!--<meta property="og:image:height" content="630">-->
+<!--<meta property="og:type" content="article" />-->
 
 
 <body style="padding: 0">
 
   <article class="post-full">
-    <header class="bg-holder post-page {% if page.color %}bg-{{ page.color }}{% endif %}" style="{% if page.cover %}background:url({{page.cover}}) no-repeat center center; background-size: cover{% endif %}">
+    <header class="bg-holder post-page {% if page.color %}bg-{{ page.color }}{% endif %}" style="{% if page.cover %}background:url({{site.baseurl}}{{page.cover}}) no-repeat center center; background-size: cover{% endif %}">
       <a href="{{site.url}}/" class="overlay"><i class="fa fa-home fa-2x"></i></a>
       {% if page.cover %}<div class="img-overlay"></div>{% endif %}
     </header>

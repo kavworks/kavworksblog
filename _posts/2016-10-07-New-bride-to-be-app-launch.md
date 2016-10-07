@@ -1,7 +1,7 @@
 ---
 layout: post
 color: deep-purple
-cover: "http://previews.123rf.com/images/artisticco/artisticco1112/artisticco111200028/11578932-A-vector-illustration-of-a-bride-carrying-shopping-bags-Stock-Vector.jpg"
+cover: "/img/bride_shopping_discount.jpg"
 title:  "New bride to be app launch"
 date:   2016-10-7 01:55:00
 author: vijay
