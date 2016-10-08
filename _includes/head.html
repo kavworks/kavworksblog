@@ -64,14 +64,15 @@
 
 
   <!--<meta property='og:image' content="{{site.url}}{{site.baseurl}}/img/kavworks_big_logo.png"/>-->
-
   <meta property='og:image' content="{{site.url}}{{site.baseurl}}{{page.cover}}"/>
 
   <meta property='og:type' content="article:section" />
   <meta property='fb:app_id' content='1575404429433593' />
   <meta property="fb:admins" content="vijay777pawar" />
 
-  <meta property='og:title' content="KAVworks Technologies Pvt Ltd" />
+  <!--<meta property='og:title' content="KAVworks Technologies Pvt Ltd" />-->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+
 
   <meta property="og:url" content="hellourl.com"/>
   <meta property="og:description" content="Yoo this is description"/>
