@@ -1,12 +1,30 @@
+<!--<div class="mui-col-lg-4">-->
+    <!--<div class="mui-panel">-->
+        <!--<div class="post">-->
+            <!--<h3>Recent Posts</h3>-->
+            <!--{% for post in site.posts offset:1 limit:3 %}-->
+            <!--<ul>-->
+                <!--{% if forloop.last %}-->
+                <!--<li>-->
+                    <!--<a href="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>-->
+                <!--</li>-->
+                <!--{% endif %}-->
+            <!--</ul>-->
+            <!--{% endfor %}-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
 <div class="mui-col-lg-4">
     <div class="mui-panel">
         <div class="post">
-            <h1>Recent Posts</h1>
-            {% for post in site.posts offset:1 limit:3 %}
+            <h3>Latest Posts</h3>
+            {% for post in site.posts limit:1 %}
             <ul>
                 {% if forloop.last %}
                 <li>
-                    <a href="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </li>
                 {% endif %}
             </ul>
@@ -31,7 +49,7 @@
                 {% endif %}
                 {% endunless %}
 
-                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -40,36 +58,50 @@
 
 <div class="mui-col-lg-4">
     <div class="mui-panel">
-        <h2>Links1</h2>
+        <!--<h2>Links1</h2>-->
+        <!--<ul class="about-links">-->
+            <!--<li><a href="/bitwiser-material/about/" class="mui-btn">About</a></li>-->
+        <!--</ul>-->
+        <h3>Contact</h3>
         <ul class="about-links">
-            <li><a href="/bitwiser-material/about/" class="mui-btn">About</a></li>
-        </ul>
-        <h2>Contact</h2>
-        <ul class="about-links">
+
+            <li><a href="http://www.kavworks.com/" target="_blank" class="mui-btn"><i
+                    class="fa fa-external-link"></i> Website</a></li>
+
             {% if site.links.github %}
             <li><a href="https://github.com/{{ site.links.github }}" target="_blank" class="mui-btn"><i
-                    class="fa fa-github"></i>Github</a></li>
+                    class="fa fa-github"></i> Github</a></li>
             {% endif %}
+
             {% if site.links.twitter %}
             <li><a href="https://twitter.com/{{ site.links.twitter }}" target="_blank" class="mui-btn "><i
-                    class="fa fa-twitter"></i>Twitter</a></li>
+                    class="fa fa-twitter"></i> Twitter</a></li>
             {% endif %}
+
             {% if site.links.facebook %}
             <li><a href="https://www.facebook.com/{{ site.links.facebook }}" target="_blank" class="mui-btn"><i
-                    class="fa fa-facebook"></i>Facebook</a></li>
+                    class="fa fa-facebook"></i> Facebook</a></li>
             {% endif %}
+
             {% if site.links.email %}
-            <li><a href="mailto:{{ site.links.email }}" class="mui-btn"><i class="fa fa-envelope"></i>Mail</a></li>
+            <li><a href="mailto:{{ site.links.email }}" class="mui-btn"><i class="fa fa-envelope"></i> Mail</a></li>
             {% endif %}
-            
-            <li>
-                <div     
-                  data-show-faces="true"
-                  class="fb-like"
-                  data-share="true"
-                  data-width="450">
+
+
+            <li><a href="https://www.facebook.com/{{ site.links.facebook }}" target="_blank" class="mui-btn"><i
+                    class="fa fa-facebook"></i>
+                <div
+                        data-show-faces="true"
+                        class="fb-like"
+                        data-share="true"
+                        data-width="450">
                 </div>
-            </li>
+
+            </a></li>
+
+
+
+
         </ul>
     </div>
 </div>

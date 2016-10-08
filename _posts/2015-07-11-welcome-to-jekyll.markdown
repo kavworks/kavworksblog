@@ -1,8 +1,8 @@
 ---
 layout: post
 color: deep-purple
-cover: "http://s3-ap-southeast-1.amazonaws.com/monster-machine/images/horssghonr-1436272011-Midas.jpg"
-title:  "Welcome to Jekyll!"
+cover: "/img/kavworksbloglaunch.jpg"
+title:  "Kavworks Blog Launch !"
 date:   2015-07-11 13:50:39
 categories: jekyll update
 ---

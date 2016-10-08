@@ -2,7 +2,7 @@
 layout: post
 color: purple
 title:  "Bharat Kisan App Launch"
-cover: "http://www.clipartkid.com/images/26/components-of-organic-fertilizer-image-by-microsoft-office-clip-art-PsDT67-clipart.jpg"
+cover: "/img/bharatkisan.jpg"
 date:   2016-10-01 01:54:00
 author: kajal
 ---
