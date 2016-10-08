@@ -1,7 +1,7 @@
 ---
 layout: post
 color: deep-purple
-cover: "/img/bride_shopping_discount.jpg"
+cover: "/img/bride_shopping_discount1.jpg"
 title:  "New bride to be app launch"
 date:   2016-10-7 01:55:00
 author: vijay
