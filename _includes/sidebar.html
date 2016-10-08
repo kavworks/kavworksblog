@@ -1,21 +1,3 @@
-<!--<div class="mui-col-lg-4">-->
-    <!--<div class="mui-panel">-->
-        <!--<div class="post">-->
-            <!--<h3>Recent Posts</h3>-->
-            <!--{% for post in site.posts offset:1 limit:3 %}-->
-            <!--<ul>-->
-                <!--{% if forloop.last %}-->
-                <!--<li>-->
-                    <!--<a href="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>-->
-                <!--</li>-->
-                <!--{% endif %}-->
-            <!--</ul>-->
-            <!--{% endfor %}-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
-
 <div class="mui-col-lg-4">
     <div class="mui-panel">
         <div class="post">
@@ -68,10 +50,10 @@
             <li><a href="http://www.kavworks.com/" target="_blank" class="mui-btn"><i
                     class="fa fa-external-link"></i> Website</a></li>
 
-            {% if site.links.github %}
-            <li><a href="https://github.com/{{ site.links.github }}" target="_blank" class="mui-btn"><i
-                    class="fa fa-github"></i> Github</a></li>
-            {% endif %}
+            <!--{% if site.links.github %}-->
+            <!--<li><a href="https://github.com/{{ site.links.github }}" target="_blank" class="mui-btn"><i-->
+                    <!--class="fa fa-github"></i> Github</a></li>-->
+            <!--{% endif %}-->
 
             {% if site.links.twitter %}
             <li><a href="https://twitter.com/{{ site.links.twitter }}" target="_blank" class="mui-btn "><i
