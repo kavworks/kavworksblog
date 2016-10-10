@@ -1,7 +1,7 @@
 ---
 layout: post
 color: deep-purple
-cover: "/img/bride_shopping_discount1.jpg"
+cover: "/img/first-blog-post.jpg"
 title:  "Vanchha First Blog Post"
 date:   2016-10-10 01:55:00
 author: vanchha
