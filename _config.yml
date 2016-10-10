@@ -7,7 +7,7 @@ keywords: "kavworks, technology, software, android, website"
 #url: "http://bitwiser.in/bitwiser-material" # the base hostname & protocol for your site
 url: "http://blog.kavworks.com" # the base hostname & protocol for your site
 #url : "http://127.0.0.1:4000"
-baseurl: "/kavworksblog" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/   /kavworksblog
 paginate: 3
 paginate_path: "page:num"
 # Build settings
