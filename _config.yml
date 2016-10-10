@@ -5,8 +5,8 @@ email: vijay777pawar@gmail.com
 description: "A technology company to meet all end to end software requirements of every customer on this planet "
 keywords: "kavworks, technology, software, android, website"
 #url: "http://bitwiser.in/bitwiser-material" # the base hostname & protocol for your site
-url: "http://blog.kavworks.com" # the base hostname & protocol for your site
-#url : "http://127.0.0.1:4000"
+#url: "http://blog.kavworks.com" # the base hostname & protocol for your site
+url : "http://127.0.0.1:4000"
 baseurl: "" # the subpath of your site, e.g. /blog/   /kavworksblog
 paginate: 2
 paginate_path: "page:num"
@@ -26,12 +26,30 @@ exclude:
   - README.md
 full_name: vanchha
 
+
 ##set this to enable disqus commenting
 disqus: blog-kavworks-com-1
+
+##For Setting up disqus go to https://disqus.com/admin/create/ and register company website under your account set this to enable disqus commenting
+
+
 
 ##set this to enable google analytics
 #ga_id: analyticsID
 #ga_domain: bitwiser.in
 
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate,octopress-minify-html]
+
+
+#minification Html & js
+
+env: production    #To Remove minification Comment This tag
+
+minify_html: false #To Remove minification Comment This tag
+
+html_press:
+  unquoted_attributes: false
+  drop_empty_values: false
+  strip_crlf: false
+  js_minifier_options: false
