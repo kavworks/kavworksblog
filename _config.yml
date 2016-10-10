@@ -27,7 +27,7 @@ exclude:
 full_name: vanchha
 
 ##set this to enable disqus commenting
-disqus: pawarvijay
+disqus: https-pawarvijay-github-io-kavworksblog
 
 ##set this to enable google analytics
 #ga_id: analyticsID
